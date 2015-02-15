@@ -1,0 +1,12 @@
+# Site settings
+title: Bob Cao
+email: bobintornado@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  This is my personal blog, and I post all kinds of stuff here, from web development to personal thoughts
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://bobintornado.github.io" # the base hostname & protocol for your site
+twitter_username: Bob_InTornado
+github_username:  bobintornado
+
+# Build settings
+markdown: kramdown
