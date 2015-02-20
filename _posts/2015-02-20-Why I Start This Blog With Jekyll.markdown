@@ -1,7 +1,8 @@
 ---
 layout: post
+comments: true
 title:  "Why I Start This Blog With Jekyll"
-date:   2015-02-20 19:55:36
+date:   2015-02-20 09:55:36
 categories: others
 ---
 A few days ago I have decided to use Jekyll to generate my new blog, and start blogging seriously. I mean, create some serious content worth sharing. 
