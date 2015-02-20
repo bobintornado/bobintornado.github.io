@@ -16,4 +16,4 @@ I have a wide ranges of interests, and read a lot.
 
 I am currently studying in Singapore, and actively looking for career opportunities.
 
-Shot me an email if you would like to have a cup of coffee with me. :)
+Shot me an email [at] bobintornado@gmail.com if you would like to have a cup of coffee with me. :) 
