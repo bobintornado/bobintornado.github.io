@@ -3,7 +3,7 @@ layout: post
 comments: true
 title:  "How I Install Jekyll On OS X Yosemite"
 date:   2015-02-20 19:24:36
-categories: others
+categories: Development
 ---
 
 Well, I try to follow <http://jekyllrb.com/docs/installation/> and do my own installation, but I did run into some small troubles and I'd like to share some of them.
