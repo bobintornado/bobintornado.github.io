@@ -43,6 +43,6 @@ Lastly, the new desktop application looks like this
 
 {% include image.html img="assets/nitrous/desktopapp.png" title="desktopapp" %}
 
-It looks pretty neat but the Shell function is not working for. 
+It looks pretty neat but the Shell function is not working for now. 
 
 So this is my first impression on Nitrous Pro Beta version for now, leave a comment below and let me know how do you think about it!
