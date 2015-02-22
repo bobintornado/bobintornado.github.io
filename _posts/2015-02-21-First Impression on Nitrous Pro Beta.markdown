@@ -3,7 +3,7 @@ layout: post
 comments: true
 title:  "First Impression on Nitrous Pro Beta"
 date:   2015-02-21 21:47:36
-categories: [Development, Review]
+categories: Development
 ---
 
 So a few days ago I got this "Nitrous Pro Private Beta" invitation email from the Nitrous team with a $50 credit. Since I am using Nitrous recently on a few small projects, and I'm actually a paid user, so I decide to go ahead to give a try. Not mentioning they now give you **root access**!
