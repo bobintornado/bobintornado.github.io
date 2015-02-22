@@ -10,3 +10,6 @@ github_username:  bobintornado
 
 # Build settings
 markdown: kramdown
+
+gems:
+  - jekyll-sitemap
