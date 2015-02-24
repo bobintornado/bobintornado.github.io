@@ -6,7 +6,7 @@ permalink: /about/
 
 Hey 
 
-I am Bob. yeah, that's me.
+I am Bob. Yeah, that's me.
 
 I'd like to think myself as a cool kid, and cool kid usually does cool stuff. So I make a lot cool things and talk a lot cool stuff. Accidentally, majority of them are about technology, particularly web development.
 
