@@ -1,0 +1,46 @@
+---
+layout: post
+comments: true
+title:  "Geospatial Memo"
+date:   2015-04-09 01:55:36
+categories: Development
+---
+
+Recently I am learning a geospatial course at my home university, and I am also building a simple web application as exercise. 
+
+Following is an incomplete memo of what I have learned along the way.
+
+* Leaflet.js is a good library for building map related applications. and you should check it out at <https://github.com/Leaflet/Leaflet>
+* A basic code snippet of using leaflet.This creates a new map on DOM element whose id equals to "map" (which is usually a simple div),		  and add a basic Open Street Map base layer.
+
+{% highlight JavaScript %}
+
+map = L.map('map').setView([1.3569, 103.7779], 12);
+
+L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+  attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+}).addTo(map);
+
+{% endhighlight %}
+
+* A few frequently used projection system 
+
+	
+	EPSG:4326 -- WGS 84 <br/>
+	EPSG:3857 -- WGS84 Web Mercator (Auxiliary Sphere)<br/>
+	EPSG:3414 -- SVY21 <br/>
+
+	So what's the difference between these projections?<br/>
+	In short the data stored in Open Street Map is EPSG:4326, but The Open Street Map tiles and the WMS webservice are in the projected coordinate system that is based on the EPSG:3857.
+
+	Read this more at <http://gis.stackexchange.com/questions/48949/epsg-3857-or-4326-for-googlemaps-openstreetmap-and-leaflet>
+
+* When converting shp files into geojson, use EPSG:4326, which I found works well with leaflet. And I use GDAL to do so.
+	
+	````
+	ogr2ogr -f GeoJSON -t_srs EPSG:4326 [name].geojson [name].shp
+	````
+
+	If you are Mac user, read more at <http://ben.balter.com/2013/06/26/how-to-convert-shapefiles-to-geojson-for-use-on-github/>
+
+* Use Leaflet 0.8-dev version instead of 0.7 stable before 1.0 rolls out. In my opinion, the 0.8-dev version has more features and offer better utilities. 
