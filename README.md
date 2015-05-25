@@ -1,2 +1,2 @@
 #Bob's Blog
-All kinds of stuff. 
+All kinds stuff. 
