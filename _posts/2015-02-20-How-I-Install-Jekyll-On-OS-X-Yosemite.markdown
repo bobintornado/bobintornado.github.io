@@ -6,6 +6,8 @@ date:   2015-02-20 19:24:36
 categories: Development
 ---
 
+`Update`: This post has some minor issues here and there and is a bit outdated now. Please don't follow step by step. The general idea here is to use `rbenv` as ruby development environment controller so that we could avoid using `sudo` when install jekyll.
+
 Well, I try to follow <http://jekyllrb.com/docs/installation/> and do my own installation, but I did run into some small troubles and I'd like to share some of them.
 
 Firstly, I type the following command line
