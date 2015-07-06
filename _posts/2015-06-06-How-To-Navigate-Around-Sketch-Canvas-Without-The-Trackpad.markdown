@@ -10,7 +10,8 @@ categories: Life
 * Use scroll-wheel to scroll up and down. 
 * Hold `Shift` and use scroll-wheel to scroll left and right. 
 * Hold down the `⌘` key to zoom in and out with scroll-wheel.
-* Use the `Z` key to quickly zoom into a particular area
+* Use `⌘` key in combination with `-` and `=` to zoom in and out.
+* Use the `Z` key to quickly zoom into a particular area.
 * Note that Page Up / Page Down switches between Pages.
 
 Reference: <http://bohemiancoding.com/sketch/support/documentation/10-canvas/>
