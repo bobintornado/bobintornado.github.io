@@ -4,12 +4,12 @@ title: About
 permalink: /about/
 ---
 
-Developer for bread, student for life. 
+Well-round developer want-to-be.
 
-Working in a tiny startup in Singapore, mainly doing web development, now learning about Ansible. 
+Currently Working in a tiny startup in Singapore. 
 
-Wrote a lot a lot Java-script, really like ruby. 
+Have some chops in JavaScript and iOS. 
+
+Learning Android, Embedded and networking stuff. 
 
 Like cool stuff, obsessed with all kinds of `why` questions.
-
-And trying to cut down some weight by running nowadays.
