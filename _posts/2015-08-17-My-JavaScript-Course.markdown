@@ -10,7 +10,7 @@ A few days ago on Aug 13, I went back to my home university and hold a one day J
 
 I covered 
 
-* A few operators \(\=\=\=,\!\=\=, \?\:, \|\|\)
+* A few operators \(\=\=\=,\!\=\=, ?\:, \|\|\)
 * Function
 * Closure 
 * Promise
