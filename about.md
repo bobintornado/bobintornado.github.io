@@ -4,12 +4,10 @@ title: About
 permalink: /about/
 ---
 
-Well-round developer want-to-be.
+Web and iOS developer.
 
-Currently Working in a tiny startup in Singapore. 
+Working for a really awesome company called [Tinkerbox Studio](http://www.tinkerbox.com.sg/) . 
 
-Have some chops in JavaScript and iOS. 
+Interested and currently self-learning embedded development.
 
-Learning Android, Embedded and networking stuff. 
-
-Like cool stuff, obsessed with all kinds of `why` questions.
+Like cool stuff, and obsessed with all kinds of `why` questions.
