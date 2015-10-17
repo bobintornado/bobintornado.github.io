@@ -2,7 +2,7 @@
 layout: post
 comments: true
 title:  "Self Discovery Rails 5 Part 1"
-date:   2015-10-17 21:24:36
+date:   2015-10-17 15:24:36
 categories: Development
 ---
 
