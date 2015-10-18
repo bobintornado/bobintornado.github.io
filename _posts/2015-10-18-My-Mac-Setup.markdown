@@ -42,4 +42,4 @@ As a developer, I love using a UNIX-like system installed on a solid built machi
 
 13. I install f.lux to protect my eyes from <https://justgetflux.com/>.
 
-This is roughly how I set up a new Mac.
+Okay, this is my setup, and now it's your turn. :)
