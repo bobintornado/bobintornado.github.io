@@ -3,7 +3,7 @@ layout: post
 comments: true
 title:  "How To Navigate Around Sketch Canvas Without The Trackpad"
 date:   2015-06-06 15:05:36
-categories: Life
+categories: Design
 ---
 
 * Hold down the space-bar to pan(drag) around. 

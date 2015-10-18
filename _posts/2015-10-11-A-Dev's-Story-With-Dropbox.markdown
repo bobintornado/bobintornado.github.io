@@ -3,7 +3,7 @@ layout: post
 comments: true
 title:  "A Dev's Story With Dropbox"
 date:   2015-10-11 21:24:36
-categories: Development
+categories: Others
 ---
 
 I really love Dropbox. 
