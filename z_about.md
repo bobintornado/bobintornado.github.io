@@ -2,6 +2,7 @@
 layout: page
 title: About
 permalink: /about/
+displayTitle: About 
 ---
 
 Web and iOS developer.
