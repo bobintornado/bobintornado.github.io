@@ -2,7 +2,7 @@
 layout: post
 comments: true
 title:  "Graph Theory Learning Materials"
-date:   2015-11-04 23:24:36
+date:   2015-11-10 23:24:36
 categories: Self Education
 ---
 
@@ -14,4 +14,4 @@ You may find reading them in sequences helpful.
 * [Union-Find Algorithm \| Set 1 (Detect Cycle in a an Undirected Graph)](http://www.geeksforgeeks.org/union-find/)
 * [Union-Find Algorithm \| Set 2 (Union By Rank and Path Compression)](http://www.geeksforgeeks.org/union-find-algorithm-set-2-union-by-rank/)
 * [Sarada Herke's YouTube Channel](https://www.youtube.com/channel/UCV8tyRakGZuXUwD-wYH1yGg)  
-* [ICS 161: Design and Analysis of AlgorithmsLecture notes for February 6, 1996](https://www.ics.uci.edu/~eppstein/161/960206.html)
+* [ICS 161: Design and Analysis of AlgorithmsLecture notes](https://www.ics.uci.edu/~eppstein/161/syl.html)
