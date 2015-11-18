@@ -15,3 +15,7 @@ I'd like to share something about git I learned the hard way in the wild.
 3. Once you decided to write good commit messages, you will immediately understand how useful `git rebase -i` is. So basically this tool allows to you checkout the branch, do a bunch of hacks, write all kinds random commit messages for yourself. For example, I literally committed stuff for almost every single changes. Then once you have done your hacks, you could connect the dots backwards by doing rebase, where you could tight up your commits and commit messages, which could clearly and logically convey what you have done. In this way, regardless in what random orders you put together you codes, you could always rearrange them in a easy-to-follow way, so other people have a much easier time going through your commits and understand what you are doing here.
 
 4. Assuming you have done above, then you will discover `git log` is really useful, try using `git log -p`, `git log --pretty=oneline` and `git log --stat`. You will feel these commands suddenly make sense, a lot of sense.
+
+
+## Note
+Special thanks to Ted and Wei-liang for sharing their thoughts and knowledge with me.
