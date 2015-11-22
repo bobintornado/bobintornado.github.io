@@ -14,7 +14,9 @@ I'd like to share something about git I learned the hard way in the wild.
 
 3. Once you decided to write good commit messages, you will immediately understand how useful `git rebase -i` is. So basically this tool allows you to checkout the branch, do a bunch of hacks, write all kinds random commit messages for yourself, but in the last tidy them up as if you wrote all these codes in one breath like a poem. However, you shouldn't rely too much on this technique, and goes too wild. A general strategy I took is hacking everything first, then committed chuck by chuck, then lastly do a bit rebasing. As git is not a tool to document the process about how did you put together your codes, but a way to communicate with your follow peers.
 
-4. Assuming you have done above, then you will discover `git log` is really useful, try using `git log -p`, `git log --pretty=oneline` and `git log --stat`. You will feel these commands suddenly make sense, a lot of sense.
+4. If you really messed up commits or use commits as intermediate sync mechanism between different laptops, you may find `git reset` a useful tool to *restart writing all commits & messages but keep the changes*. Combining this technique with branching, a whole lot of fancy stuff could be done.
+
+5. Assuming you have done above, then you will discover `git log` is really useful, try using `git log -p`, `git log --pretty=oneline` and `git log --stat`. You will feel these commands suddenly make sense, a lot of sense.
 
 ## Note
 Special thanks to Ted and Wei-liang for sharing their thoughts and knowledge with me.
