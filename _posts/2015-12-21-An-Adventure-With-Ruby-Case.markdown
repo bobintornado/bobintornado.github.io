@@ -57,15 +57,15 @@ else
 end
 {% endhighlight %}
 
-Mmmmmm. This seems correct. And our codes also seems correct.
+Mmmmmm. This seems correct. And our codes also seem correct.
 
 Errr. BUT.
 
 {% include image.html img="assets/ruby_case/wait-a-minute.jpg" title="wait a minute" %}
 
-There seems to be something wrong going around here with our expectations of our Ruby codes.
+There seems to be something WRONG here with our expectations of our Ruby codes.
 
-Then I suddenly realized that while I am expecting the `case` to execute the `when` clause where it return `true`, it is actually ***COMPARING THE VALUE AGAINST THE VALUE WHEN RETURNS***.
+Then I suddenly realized that while I am expecting the `case` to execute the `when` clause where it first return `true`, it is actually ***COMPARING THE VALUE AGAINST THE VALUE WHEN RETURNS***.
 
 
 It's not `conditions` based here, it's value based! So what happened here for the sample code is actually 
