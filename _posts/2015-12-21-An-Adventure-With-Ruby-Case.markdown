@@ -39,7 +39,7 @@ And we were like
 
 So we went online trying to find some examples in order to double confirm we were writing some correct Ruby codes.
 
-So we read the following sample together from this blog [post](http://www.skorks.com/2009/08/how-a-ruby-case-statement-works-and-what-you-can-do-with-it/).
+So we read the following sample codes from this blog [post](http://www.skorks.com/2009/08/how-a-ruby-case-statement-works-and-what-you-can-do-with-it/).
 
 {% highlight ruby %}
   
