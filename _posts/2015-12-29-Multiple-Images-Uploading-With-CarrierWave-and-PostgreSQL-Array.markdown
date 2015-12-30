@@ -80,12 +80,12 @@ For this newly generated uploader, let's change the storage from from `:file` to
 
 Now we have the our uploader `ImageUploader`, let's could go ahead scaffolding out our application.
 
-Let's Run `rails g scaffold gallery title:string`, and add `mount_uploaders :images, ImageUploader` into the active record class, so that our `/app/models/gallery.rb` looks like
+Let's Run `rails g scaffold gallery title:string`, and add `mount_uploaders :images, ImageUploader` into the Active Record class, so that our `/app/models/gallery.rb` looks like
 
 {% highlight ruby %}
 
 class Gallery < ActiveRecord::Base
-  mount_uploaders :images, ImageUploader
+  mount_uploaders :images, ImageUploader # mount the uploader
 end
 
 {% endhighlight %}
@@ -116,7 +116,7 @@ Let's edit `app/views/galleries/_form.html.slim` file to add a multiple files fi
 
 {% highlight ruby %}
 .field 
-  = f.file_field :images, multiple: true # add the multiple part file input
+  = f.file_field :images, multiple: true # make this input a multiple files input
 {% endhighlight %}
 
 Then let's edit the `#gallery_params` method of `GalleriesController` to accept multiple images.
@@ -127,14 +127,14 @@ def gallery_params
 end
 {% endhighlight %}
 
-Next let's edit the `index` and `show` views to display the images we uoloaded. 
+Next let's edit the `index` and `show` views to display the images we uploaded. 
 
 Let's add the following codes into `app/views/galleries/index.html.slim`
 
 {% highlight ruby %}
 td 
-  - gallery.images.each do |image|
-    = image_tag(image.url)
+  - gallery.images.each do |image| # for each image
+    = image_tag(image.url) # display the image
 {% endhighlight %}
 
 And also add the following codes into `app/views/galleries/show.html.slim`
@@ -153,7 +153,7 @@ After creation you should see something like the following screenshot when visit
 
 ## Step 4 Implement add more images feature
 
-In step 4 let's modify our routes, and nest an images resources under galleries resources, so that our routes file should look like something below
+In step 4 let's modify our routes, and nest an images resources under galleries resources, so that our `config/routes.rb` file should look like something below
 
 {% highlight ruby %}
 
@@ -207,7 +207,7 @@ Now let's modify the `show` view to take advantage of this `ImagesController` by
 
 h1 Add more images
 
-= form_for @gallery, url: gallery_images_path(@gallery), method: :post do |f|
+= form_for @gallery, url: gallery_images_path(@gallery), method: :post do |f| # use customized url endpoint 
   .field
     = f.file_field :images, multiple: true
 
@@ -215,7 +215,7 @@ h1 Add more images
 
 {% endhighlight %}
 
-Now we let's visit `show` page of a single individual gallery, and we should be able to use the there form to add more images to the the gallery.
+Now we let's visit `show` page of a single individual gallery, and we should be able to use the form there to add more images to existing galleries.
 
 ## Step 5 Implement remove single image feature
 
@@ -227,7 +227,7 @@ Firstly let's update routes to
 
 Rails.application.routes.draw do
   resources :galleries do
-    resources :images, :only => [:create, :destroy]
+    resources :images, :only => [:create, :destroy] # support #create and #destroy
   end
 end
 {% endhighlight %}
@@ -286,10 +286,11 @@ Let's modify the code block we used to display the images to
 {% highlight ruby %}
 
 div
-  - @gallery.images.each_with_index do |image, index|
+  - @gallery.images.each_with_index do |image, index| #grab the index
     div 
       = image_tag(image.url)
       = link_to "Delete", gallery_image_path(@gallery, index), :method => :delete, data: { confirm: "Are you sure you want to delete this image?" }
+      # generate the delete link url by using helper gallery_image_path with image index
 
 {% endhighlight %}
 
