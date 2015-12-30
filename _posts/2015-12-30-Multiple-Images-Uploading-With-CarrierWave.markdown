@@ -1,14 +1,14 @@
 ---
 layout: post
 comments: true
-title:  "Multiple Images Uploading With CarrierWave"
+title:  "Multiple Images Uploading With CarrierWave and PostgreSQL Array"
 date:   2015-12-30 21:24:36
 categories: Rails
 ---
 
-TL;DR. Jump to [key points](http://localhost:4000/rails/2015/12/31/Multiple-Images-Uploading-With-CarrierWave.html#keypoints) section.
+TL;DR. Jump to fully completed [sample codes](https://github.com/bobintornado/sample-gallery-app-with-carrierwave) on Github.
 
-In this blog post I am going to demonstrate how to implement multiple images uploading related features by using CarrierWave, and I am going to illustrate the technique in the context of a sample gallery application.
+In this blog post I am going to demonstrate how to implement multiple images uploading related features by using CarrierWave and PostgreSQL Array, and I am going to illustrate the technique in the context of a sample gallery application.
 
 To be specific about the features, we are going to implement the following ones:
 
@@ -20,42 +20,37 @@ And roughly I am going to build this sample application in the following way:
 
 1. Use Rails 4.2.5 as the overall framework
 2. Use CarrierWave as the gem for handling multiple files uploading. And I am going to use the master branch, since according to the [documentation](https://github.com/carrierwaveuploader/carrierwave), this feature is only enabled on the master branch
-3. Use PostgreSQL as the database, and particularly exploit the convenient array type supported by PostgreSQL for storing a sequence of \"*images*\".
-4. Use Amazon S3 for storing the actual images uploaded.
+3. Use PostgreSQL as the database, and particularly exploit the convenient `array` type supported by PostgreSQL for storing a sequence of \"*images*\"
+4. Use Amazon S3 for storing the actual images uploaded
 5. Use Slim as the template engine and some HTML5 features, particular the \<input\> multiple attribute (eg. `<input type="file" name="imgs" multiple>`)
 
 And now let's build this application step by step.
 
-1. Generate a new Rails application, install some gems and do some configuration.
-2. Configured the CarrierWave and create the uploader.
-3. Create our models & its migration
-4. Create the routes and controllers
-5. Prepare relevant views
-6. Smooth up the user interaction with some CoffeeScript
-7. Re-factoring
+## Step 1 Setup the Rails application
 
-## Step 1 Setup the Rails Application
+First let's run `rails new sample-gallery-app-with-carrierwave` to generate a new Rails applicaiton which we are going to work on.
 
-First let's run `rails new sample-gallery-app` to generate our new gallery application.
+And inside file `Gemfile`, I specify the Ruby version to `2.3.0` by adding `ruby "2.3.0"`.
 
-And inside our `Gemfile`, I specify the Ruby version to `2.2.4` by adding `ruby "2.2.4"`.
+Next let's remove gem `sqlite3`, and add following gems 
 
-I remove gem `sqlite3`, and add following gems 
+{% highlight ruby %}
 
-* gem "pg", "0.18.1"
-* gem "slim-rails", "~> 3.0.1"
-* gem "bootstrap-sass", "~> 3.3.6"
-* gem "carrierwave", :github => "carrierwaveuploader/carrierwave"
-* gem "fog-aws"
+gem "pg", "0.18.4"
+gem "slim-rails", "~> 3.0.1"
+gem "bootstrap-sass", "~> 3.3.6"
+gem "carrierwave", :github => "carrierwaveuploader/carrierwave"
+gem "fog-aws"
 
-After this, let's run `bundle` to get everything installed.
+{% endhighlight %}
 
-After installing the gems, let's configure `config/database.yml` to use `postgresql` instead of `sqlite3`.
+And now let's configure `config/database.yml` to use `postgresql` instead of `sqlite3`.
 
+Finally, let's run `bundle` to get everything installed.
 
 ## Step 2 Configure CarrierWave
 
-Let's create the initialization file `/config/initializers/carrier_wave.rb` and copy & paste in the example configuration from official documentation.
+Let's create the initialization file `config/initializers/carrier_wave.rb` and copy & paste in the example configuration from the official documentation.
 
 {% highlight ruby %}
 
@@ -76,17 +71,17 @@ end
 
 {% endhighlight %}
 
-You need to replace sample credentials with yours.
+You will need to replace sample credentials with yours.
 
 And then Let's generate our image uploader by calling `rails generate uploader Image`, this should generate a new file at path `app/uploaders/image_uploader.rb`.
 
-For this newly generated uploader, let's change the `storage :file` to `storage :fog`. 
+For this newly generated uploader, let's change the storage from from `:file` to `:fog` (change line `storage :file` to `storage :fog`).
 
-## Step 3 Create Models
+## Step 3 Scaffolding the basic
 
-Now we have the our class `ImageUploader`, we could go ahead and generate the model we need, namely the `gallery` model.
+Now we have the our uploader `ImageUploader`, let's could go ahead scaffolding out our application.
 
-Let's Run `rails g model gallery`, and add `mount_uploaders :images, ImageUploader` into the class, so that `/app/models/gallery.rb` looks like 
+Let's Run `rails g scaffold gallery title:string`, and add `mount_uploaders :images, ImageUploader` into the active record class, so that our `/app/models/gallery.rb` looks like
 
 {% highlight ruby %}
 
@@ -96,44 +91,221 @@ end
 
 {% endhighlight %}
 
-`mount_uploaders :images, ImageUploader`
+Then lets create the images related migration by calling:
 
-Then lets create the migration for this model by calling:
-
-`rails g migration AddDetailsToGallery`
+`rails g migration AddImagesToGallery`
 
 And in the generated migration file, let's write 
 
 {% highlight ruby %}
 
-class AddDetailsToGallery < ActiveRecord::Migration
+class AddImagesToGallery < ActiveRecord::Migration
   def change
-    add_column :galleries, :name, :string
     add_column :galleries, :images, :string, array: true, default: []
   end
 end
 
 {% endhighlight %}
 
-This is how we add a array column to our Gallery model to hold the images.
+This is how we add a array column `images` to our galleries table for holding images.
 
-## Step 4 Create Routes and Controllers
+Next let's run `rake db:migrate` and `rake db:setup` to get our database updated.
 
-Let's create our routes, and nest images resources under galleries resources, so that our routes file should look like something below
+## Step 4 Implement create gallery feature
+
+Let's edit `app/views/galleries/_form.html.slim` file to add a multiple files field to the form.
+
+{% highlight ruby %}
+.field 
+  = f.file_field :images, multiple: true
+{% endhighlight %}
+
+Then let's edit the `#gallery_params` method of `GalleriesController` to accept multiple images.
+
+{% highlight ruby %}
+def gallery_params
+  params.require(:gallery).permit(:title, {images: []})
+end
+{% endhighlight %}
+
+Next let's edit the `index` and `show` views to display the images we uoloaded. 
+
+Let's add the following codes into `app/views/galleries/index.html.slim`
+
+{% highlight ruby %}
+td 
+  - gallery.images.each do |image|
+    = image_tag(image.url)
+{% endhighlight %}
+
+And also add the following codes into `app/views/galleries/show.html.slim`
+
+{% highlight ruby %}
+div
+  - @gallery.images.each do |image|
+    = image_tag(image.url)
+{% endhighlight %}
+
+Now let's start our Rails application and hit `http://localhost:3000/galleries/new` to create a gallery.
+
+After creation you should see something like the following screenshot when visiting `http://localhost:3000/galleries`.
+
+{% include image.html img="assets/CarrierWave/index.png" title="index" %}
+
+## Step 4 Implement add more images feature
+
+In step 4 let's modify our routes, and nest an images resources under galleries resources, so that our routes file should look like something below
 
 {% highlight ruby %}
 
 Rails.application.routes.draw do
-  resources :galleries, do
-    resources :images, :only => [:create, :destroy]
+  resources :galleries do
+    resources :images, :only => [:create]
+  end
 end
 
 {% endhighlight %}
 
-We setup routes this way so that we could easily modify each image individually.
+And now let's generate the images controllers by calling `rails generate controller Images`.
 
-And now let's generate our controllers by calling 
+Then let's write the actual codes responsible for adding more images into existing gallery.
 
-`rails generate controller Galleries` and `rails generate controller Images`
+{% highlight ruby %}
 
-Let's fill up the GalleriesController with standard CRUD actions.
+class ImagesController < ApplicationController
+  before_action :set_gallery
+
+  def create
+    add_more_images(images_params[:images]))
+    flash[:error] = "Failed uploading images" unless @gallery.save
+    redirect_to :back
+  end
+
+  private
+
+  def set_gallery
+    @gallery = Gallery.find(params[:gallery_id])
+  end
+
+  def add_more_images(new_images)
+    images = @gallery.images
+    images += new_images
+    @gallery.images = images
+  end
+
+  def images_params
+    params.require(:gallery).permit({images: []})
+  end
+end
+
+{% endhighlight %}
+
+And as you could see in the codes, when we need to add more images we simply add more images into the array attribute , and save the gallery object afterwards.
+
+Now let's modify the `show` view to take advantage of this `ImagesController` by adding the following codes
+
+{% highlight ruby %}
+
+h1 Add more images
+
+= form_for @gallery, url: gallery_images_path(@gallery), method: :post do |f|
+  .field
+    = f.file_field :images, multiple: true
+
+  .actions = f.submit "Add More Images"
+
+{% endhighlight %}
+
+Now we let's visit `show` page of a single individual gallery, and we should be able to use the there form to add more images to the the gallery.
+
+## Step 5 Implement remove single image feature
+
+Now let's implement the remove single image feature.
+
+Firstly let's update routes to 
+
+{% highlight ruby %}
+
+Rails.application.routes.draw do
+  resources :galleries do
+    resources :images, :only => [:create, :destroy]
+  end
+end
+{% endhighlight %}
+
+The let's implement the actual `#destory` action of `ImagesController`, so that the controller should looks like this:
+
+{% highlight ruby %}
+
+class ImagesController < ApplicationController
+  before_action :set_gallery
+
+  def create
+    add_more_images(images_params[:images])
+    flash[:error] = "Failed uploading images" unless @gallery.save
+    redirect_to :back
+  end
+
+  def destroy
+    remove_image_at_index(params[:id].to_i)
+    flash[:error] = "Failed deleting image" unless @gallery.save
+    redirect_to :back
+  end
+
+  private
+
+  def set_gallery
+    @gallery = Gallery.find(params[:gallery_id])
+  end
+
+  def add_more_images(new_images)
+    images = @gallery.images
+    images += new_images
+    @gallery.images = images
+  end
+
+  def remove_image_at_index(index)
+    remain_images = @gallery.images
+    deleted_image = remain_images.delete_at(index)
+    deleted_image.try(:remove!)
+    @gallery.images = remain_images
+  end
+
+  def images_params
+    params.require(:gallery).permit({images: []})
+  end
+end
+
+{% endhighlight %}
+
+As shown in the codes, when we want to delete certain image, we first remove the image from the array, then delete the image from S3, and lastly re-assign the modified images array back to gallery object.
+ 
+Now let's modify our `show` view to use this action.
+
+Let's modify the code block we used to display the images to 
+
+{% highlight ruby %}
+
+div
+  - @gallery.images.each_with_index do |image, index|
+    div 
+      = image_tag(image.url)
+      = link_to "Delete", gallery_image_path(@gallery, index), :method => :delete, data: { confirm: "Are you sure you want to delete this image?" }
+
+{% endhighlight %}
+
+Now when you visit a gallery, you should see something like following screenshot
+
+{% include image.html img="assets/CarrierWave/show.png" title="show" %}
+
+## Congraulations!
+
+Now you have completed the tutorial, and finish the three features we set to complete, you are good to go ahead refactoring those codes so that you could put them into productions.
+
+You should move the add/remove related codes into two service classes, add some validations here and there, enhance the error messages, improve the front-end user experience, and make the codebase more robust, but they are out of the scope of this blog post, thus not covered here.
+
+That's all for this post.
+
+Happy coding.
+
+Till next time.
