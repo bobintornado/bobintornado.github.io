@@ -2,7 +2,7 @@
 layout: post
 comments: true
 title:  "Multiple Images Uploading With CarrierWave and PostgreSQL Array"
-date:   2015-12-30 21:24:36
+date:   2015-12-29 23:24:36
 categories: Rails
 ---
 
@@ -38,7 +38,6 @@ Next let's remove gem `sqlite3`, and add following gems
 
 gem "pg", "0.18.4"
 gem "slim-rails", "~> 3.0.1"
-gem "bootstrap-sass", "~> 3.3.6"
 gem "carrierwave", :github => "carrierwaveuploader/carrierwave"
 gem "fog-aws"
 
@@ -101,7 +100,7 @@ And in the generated migration file, let's write
 
 class AddImagesToGallery < ActiveRecord::Migration
   def change
-    add_column :galleries, :images, :string, array: true, default: []
+    add_column :galleries, :images, :string, array: true, default: [] # add images column as array
   end
 end
 
@@ -117,14 +116,14 @@ Let's edit `app/views/galleries/_form.html.slim` file to add a multiple files fi
 
 {% highlight ruby %}
 .field 
-  = f.file_field :images, multiple: true
+  = f.file_field :images, multiple: true # add the multiple part file input
 {% endhighlight %}
 
 Then let's edit the `#gallery_params` method of `GalleriesController` to accept multiple images.
 
 {% highlight ruby %}
 def gallery_params
-  params.require(:gallery).permit(:title, {images: []})
+  params.require(:gallery).permit(:title, {images: []}) # allow nested params as array
 end
 {% endhighlight %}
 
@@ -188,13 +187,13 @@ class ImagesController < ApplicationController
   end
 
   def add_more_images(new_images)
-    images = @gallery.images
-    images += new_images
-    @gallery.images = images
+    images = @gallery.images # copy the old images 
+    images += new_images # concat old images with new ones
+    @gallery.images = images # assign back
   end
 
   def images_params
-    params.require(:gallery).permit({images: []})
+    params.require(:gallery).permit({images: []}) # allow nested params as array
   end
 end
 
@@ -259,20 +258,20 @@ class ImagesController < ApplicationController
   end
 
   def add_more_images(new_images)
-    images = @gallery.images
+    images = @gallery.images 
     images += new_images
     @gallery.images = images
   end
 
   def remove_image_at_index(index)
-    remain_images = @gallery.images
-    deleted_image = remain_images.delete_at(index)
-    deleted_image.try(:remove!)
-    @gallery.images = remain_images
+    remain_images = @gallery.images # copy the array
+    deleted_image = remain_images.delete_at(index) # delete the target image
+    deleted_image.try(:remove!) # delete image from S3
+    @gallery.images = remain_images # re-assign back
   end
 
   def images_params
-    params.require(:gallery).permit({images: []})
+    params.require(:gallery).permit({images: []}) # allow nested params as array
   end
 end
 
