@@ -12,7 +12,7 @@ They will improvise on the spot and give you something truly unique, something m
 
 I was amazed by the drink I got last time and had a small chat with the bartenders, and they give me a list, with nine bars on it which they think are interesting and probably worth visiting. 
 
-Oh man, if the bartenders themseleves think the bar are good, then they must be great! So here am I sharing the list with you, and hopefully you will like it. :)
+Oh man, if the bartenders themseleves think the bar are good, then they must be great! So here am I finally sharing this secret list with you, and hopefully you will like it. :)
 
 Here goes the list:
 
