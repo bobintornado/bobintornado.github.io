@@ -7,8 +7,8 @@ displayTitle: About
 
 Web and iOS developer.
 
-Working for a really awesome company called [Tinkerbox Studio](http://www.tinkerbox.com.sg/) . 
+Engineer at [Intraix](http://www.intraix.com/).
 
-Interested and currently self-learning embedded development.
+Interested in embedded development.
 
 Like cool stuff, and obsessed with all kinds of `why` questions.
