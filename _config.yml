@@ -2,7 +2,7 @@
 title: Bob Cao
 email: bob.f.cao@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  My blog, nagging from building stuff to all kinds of ramblings. 
+  My blog, all ramblings are mine not my employer. 
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://bobintornado.github.io" # the base hostname & protocol for your site
 twitter_username: bobintornado
