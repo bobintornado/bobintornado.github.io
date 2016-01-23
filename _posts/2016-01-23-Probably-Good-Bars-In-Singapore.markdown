@@ -6,7 +6,9 @@ date:   2016-01-22 23:24:36
 categories: Lifestyle
 ---
 
-Roughly a few weeks ago my friend and I were having a great time at a bar called [The Library Bar](https://www.facebook.com/pages/The-Library-Bar/132006160198927). It was a very interesting bar, as you could order stuff that is not on the menu. You may just talk to the bartenders and tell them what you like, and the rest will be settled. They will improvise on the spot and give you something truly unique, something more than you could expect.
+Roughly a few weeks ago my friend and I were having a great time at a bar called [The Library Bar](https://www.facebook.com/pages/The-Library-Bar/132006160198927). It was a very interesting bar, as you could order stuff that is not on the menu. You may just talk to the bartenders and tell them what you like, and the rest will be settled. 
+
+They will improvise on the spot and give you something truly unique, something more than you could expect.
 
 I was amazed by the drink I got last time and had a small chat with the bartenders, and they give me a list, with nine bars on it which they think are interesting and probably worth visiting. 
 
