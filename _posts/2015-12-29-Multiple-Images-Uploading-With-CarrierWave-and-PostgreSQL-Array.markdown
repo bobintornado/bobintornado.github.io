@@ -85,7 +85,8 @@ Let's Run `rails g scaffold gallery title:string`, and add `mount_uploaders :ima
 {% highlight ruby %}
 
 class Gallery < ActiveRecord::Base
-  mount_uploaders :images, ImageUploader # mount the uploader
+  # BE CAREFUL, IT'S plural mount_uploaderS, not singular mount_uploader
+  mount_uploaders :images, ImageUploader # mount the uploaders
 end
 
 {% endhighlight %}
