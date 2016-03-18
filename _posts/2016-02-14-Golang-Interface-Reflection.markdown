@@ -75,8 +75,10 @@ I believe this is pretty much everything one needs to know at an beginning level
 After this, you may also want to read the following posts. 
 
 1. [Laws of Reflection](http://blog.golang.org/laws-of-reflection)
-2. [How to use interfaces in Go](http://jordanorelli.com/post/32665860244/how-to-use-interfaces-in-go)
-3. [Structs and Interfaces](https://www.golang-book.com/books/intro/9)
+2. [Go Data Structures: Interfaces](http://research.swtch.com/interfaces)
+3. [Learning Go - Interfaces & Reflections](http://www.laktek.com/2012/02/13/learning-go-interfaces-reflections/)
+4. [How to use interfaces in Go](http://jordanorelli.com/post/32665860244/how-to-use-interfaces-in-go)
+5. [Structs and Interfaces](https://www.golang-book.com/books/intro/9)
 
 Happy coding.
 
