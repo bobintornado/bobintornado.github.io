@@ -21,6 +21,7 @@ Enjoy.
   * [Treehouse](https://teamtreehouse.com/)
 * Git 
   * [Getting Git Right](https://www.atlassian.com/git/)
+  * [Git from the inside out](https://maryrosecook.com/blog/post/git-from-the-inside-out)
 * JavaScript
   * [Eloquent JavaScript](http://eloquentjavascript.net/) 
   * [My Own Lecture On JavaScript](https://www.youtube.com/watch?v=xoB_ax1QYoE&list=PLnbVZVPYdHvGYIVvAP2PSwbdrHP8abyqJ)
