@@ -152,9 +152,9 @@ After creation you should see something like the following screenshot when visit
 
 {% include image.html img="assets/CarrierWave/index.png" title="index" %}
 
-## Step 4 Implement add more images feature
+## Step 5 Implement add more images feature
 
-In step 4 let's modify our routes, and nest an images resources under galleries resources, so that our `config/routes.rb` file should look like something below
+In step 5 let's modify our routes, and nest an images resources under galleries resources, so that our `config/routes.rb` file should look like something below
 
 {% highlight ruby %}
 
@@ -218,7 +218,7 @@ h1 Add more images
 
 Now we let's visit `show` page of a single individual gallery, and we should be able to use the form there to add more images to existing galleries.
 
-## Step 5 Implement remove single image feature
+## Step 6 Implement remove single image feature
 
 Now let's implement the remove single image feature.
 
