@@ -6,7 +6,7 @@ date:   2015-12-29 23:24:36
 categories: Rails
 ---
 
-***Notice: there are two known issues with this approach, see [issue 1](https://github.com/carrierwaveuploader/carrierwave/issues/1704) a nd [issue 2](https://github.com/carrierwaveuploader/carrierwave/issues/2024).***
+***Notice: there are two known issues with this approach, see [issue 1](https://github.com/carrierwaveuploader/carrierwave/issues/1704) and [issue 2](https://github.com/carrierwaveuploader/carrierwave/issues/2024).***
 
 ***And Your mileage may vary.***
 
