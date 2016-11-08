@@ -6,6 +6,10 @@ date:   2015-12-29 23:24:36
 categories: Rails
 ---
 
+***Notice: there are two known issues with this approach, see [issue 1](https://github.com/carrierwaveuploader/carrierwave/issues/1704) a nd [issue 2](https://github.com/carrierwaveuploader/carrierwave/issues/2024).***
+
+***And Your mileage may vary.***
+
 TL;DR. Jump to fully completed [sample codes](https://github.com/bobintornado/sample-gallery-app-with-carrierwave) on Github.
 
 In this blog post I am going to demonstrate how to implement multiple images uploading related features by using CarrierWave and PostgreSQL Array, and I am going to illustrate the technique in the context of a sample gallery application.
