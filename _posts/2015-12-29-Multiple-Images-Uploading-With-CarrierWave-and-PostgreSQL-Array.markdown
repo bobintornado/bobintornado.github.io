@@ -10,6 +10,8 @@ categories: Rails
 
 ***And Your mileage may vary.***
 
+***Notice 2: if you last image deletion bug or all images deletion issue, refer to this github [issue](https://github.com/carrierwaveuploader/carrierwave/issues/1990) for fix.***
+
 TL;DR. Jump to fully completed [sample codes](https://github.com/bobintornado/sample-gallery-app-with-carrierwave) on Github.
 
 In this blog post I am going to demonstrate how to implement multiple images uploading related features by using CarrierWave and PostgreSQL Array, and I am going to illustrate the technique in the context of a sample gallery application.
