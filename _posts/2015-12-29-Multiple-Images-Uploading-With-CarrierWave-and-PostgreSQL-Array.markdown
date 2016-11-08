@@ -10,7 +10,7 @@ categories: Rails
 
 ***And Your mileage may vary.***
 
-***Notice 2: if you last image deletion bug or all images deletion issue, refer to this github [issue](https://github.com/carrierwaveuploader/carrierwave/issues/1990) for fix.***
+***Notice 2: if you counter last image deletion bug or all images deletion issue, refer to this github [issue](https://github.com/carrierwaveuploader/carrierwave/issues/1990) for fix.***
 
 TL;DR. Jump to fully completed [sample codes](https://github.com/bobintornado/sample-gallery-app-with-carrierwave) on Github.
 
