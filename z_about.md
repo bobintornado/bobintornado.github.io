@@ -5,15 +5,22 @@ permalink: /about/
 displayTitle: About 
 ---
 
-Web and iOS developer.
+Software engineer, mainly web and iOS.
 
-Engineer at [Intraix](http://www.intraix.com/).
+Spend most of time googling at [Nugit](https://nugit.co/).
 
-Interested in embedded development.
+Passionate about git.
 
-Like cool stuff, and obsessed with all kinds of `why` questions.
+Obsessed with all kinds of `why` questions.
 
 Some stuff I made
 
 1. [boltdb-boilerplate](https://github.com/bobintornado/boltdb-boilerplate)
-2. [some hackerrank answers](https://github.com/bobintornado/hackerrank)
+2. [Hackerrank practise](https://github.com/bobintornado/hackerrank)
+2. [Codility practise](https://github.com/bobintornado/Codility)
+
+Open soure projects I contribute to
+
+1. [twitter-ruby-ads-sdk](https://github.com/twitterdev/twitter-ruby-ads-sdk)
+2. [google-api-ruby-client](https://github.com/google/google-api-ruby-client)
+2. [spotispy](https://github.com/bobintornado/spotispy)
