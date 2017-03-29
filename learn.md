@@ -57,3 +57,4 @@ Enjoy.
 * AngularJS
   * [ng-book](https://www.ng-book.com/)
   * [Egghead.io](https://egghead.io/technologies/angularjs)
+  * [Guru99 Tutorial](http://www.guru99.com/angularjs-tutorial.html)
