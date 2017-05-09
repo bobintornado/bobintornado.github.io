@@ -49,6 +49,7 @@ Enjoy.
   * [Seven Databases in Seven Weeks](http://www.amazon.com/Seven-Databases-Weeks-Modern-Movement/dp/1934356921)
 * Linux 
   * [How Linux Works](http://www.amazon.com/How-Linux-Works-Superuser-Should/dp/1593275676/ref=dp_ob_title_bk&tag=mpptbm8aqyadc9e-20&tag=mpptbm8aqyadc9e-20)
+  * [Linux Kernel Development](https://www.amazon.com/Linux-Kernel-Development-Robert-Love/dp/0672329468)
 * iOS
   * [Programming iOS 9: Dive Deep into Views, View Controllers, and Frameworks](http://shop.oreilly.com/product/0636920044352.do)
 * C 
