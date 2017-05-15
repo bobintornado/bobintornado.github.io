@@ -16,7 +16,7 @@ But I quickly realised it won’t even work given unlimited time, as I counter l
 
 Given that using a cursor without timeout will be dangerous and a bad practice and I want to speed up the process by using some parallel processing, I decided to use a RabbitMQ work queue to solve the issue.
 
-So I split the program into two parts, namely the producer part and consumer part; the producer part will query the MongoDB and get all document ids without processing them, then pipe the ids into the RabbitMQ worker queue. Then I launched 15 consumers with pm2 listening on the worker queue with simple round-robin dispatching to work these documents in parallel.
+So I split the program into two parts, namely the producer part and consumer part; the producer part will query the MongoDB and get all document ids without processing them, then pipe the ids into the RabbitMQ worker queue. Then I launched 15 consumers with pm2 listening on the worker queue with simple round-robin dispatching to process documents in parallel.
 
 In this setup the producer did a short query and only retrieve all the ids without processing them, so it’s fast; the consumers retrieve the document one by one via document id, thus it’s also fast and impose a pretty low load on MongoDB. And the huge workload is roughly evenly distributed over the time and parallelised, so it’s also good.
 
