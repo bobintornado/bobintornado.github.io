@@ -17,6 +17,9 @@ Enjoy.
 
 * Career Guide
   * [Soft Skills: The Software Developer's Life Manual](https://www.amazon.com/Soft-Skills-software-developers-manual/dp/1617292397)
+  * [What I Wish I Knew When I Started My Career as a Software Developer](https://www.amazon.com/Soft-Skills-software-developers-manual/dp/1617292397)
+  * [What do software developers of age 30 and over know now that wish they had known in their 20s?](https://www.quora.com/What-do-software-developers-of-age-30-and-over-know-now-that-wish-they-had-known-in-their-20s)
+  * [How to get rich in tech, guaranteed.](http://startupljackson.com/post/135800367395/how-to-get-rich-in-tech-guaranteed)
 * General
   * [SafariBookOnline](https://www.safaribooksonline.com)
   * [Egghead.io](https://egghead.io/)
