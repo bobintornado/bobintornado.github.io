@@ -15,6 +15,8 @@ Enjoy.
 
 ## THE LIST
 
+* Career Guide
+  * [Soft Skills: The Software Developer's Life Manual](https://www.amazon.com/Soft-Skills-software-developers-manual/dp/1617292397)
 * General
   * [SafariBookOnline](https://www.safaribooksonline.com)
   * [Egghead.io](https://egghead.io/)
