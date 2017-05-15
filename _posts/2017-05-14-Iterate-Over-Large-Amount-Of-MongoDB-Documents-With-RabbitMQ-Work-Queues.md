@@ -6,7 +6,7 @@ date:   2017-05-14 03:24:36
 categories: Development
 ---
 
-So recently I need to iterate over and process a large amount of MongoDB documents, around 30,000 documents, each around 5~15MB in size, so it takes quite a bit of time to process each individual document.
+So recently I need to iterate over and process a large amount of MongoDB documents, around 30,000 documents per day, each around 5~15MB in size, so it takes quite a bit of time to process each individual document.
 
 And these documents need to be queried by different criteria, there are about 1000 individual queries with same query structure but different query value.
 
