@@ -48,6 +48,8 @@ Enjoy.
   * [Official Guide](http://sass-lang.com/guide)
 * Clojure
   * [Clojure for the Brave and True](http://www.braveclojure.com/)
+* Haskell
+  * [Learn You a Haskell for Great Good!](http://learnyouahaskell.com/)
 * Concurrency
   * [Seven Concurrency Models in Seven Weeks](http://www.amazon.com/Seven-Concurrency-Models-Weeks-Programmers/dp/1937785653)
 * Database 
