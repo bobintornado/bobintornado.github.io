@@ -20,4 +20,4 @@ So I split the program into two parts, namely the producer part and consumer par
 
 In this setup the producer did a short query and only retrieve all the ids without processing them, so it's fast; the consumers retrieve the document one by one via document id, thus it's also fast and impose a pretty low load on MongoDB. And the huge workload is roughly evenly distributed over the time and parallelised, so it's also good.
 
-The setup could easily scale up by simply launching more consumers and could handle failure of running consumers by using message acknoledgement and thus re-delivery the un-acknoledged messages.
+The setup could easily scale up by simply launching more consumers and could handle failure of running consumers by using message acknowledgment and thus re-delivery the un-acknowledged messages.
