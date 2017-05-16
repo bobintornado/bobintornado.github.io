@@ -1,7 +1,7 @@
 ---
 layout: post
 comments: true
-title:  "Rate Limiting using Redis in Python"
+title:  "Rate Limiting Using Redis in Python"
 date:   2017-05-15 03:24:36
 categories: Development
 ---
