@@ -49,7 +49,7 @@ class RateLimiter():
 
 This implementation use pattern `rate:namespace:uid:time_in_second` for the key to differ rate limit counters from each other; use a `lock` method to secure a slot, and expire the key in one second.
 
-This will work for concurrent works because:
+This will work for concurrent workers because:
 
 1.  The operation writes ahead with INCR, and since this operation is atomic, thus regardless the number of concurrent workers/processes trying to access the redis concurrently, it will always add up linearly one by one. A check-first-then-add will not work, because after checking other add operations may have already happended.
 2. It uses `pipeline` to wrap the INCR and EXPIRE operations in one transaction, thus atomically setting up the key. So in case of errors, there won't be any key lingering around forever.
