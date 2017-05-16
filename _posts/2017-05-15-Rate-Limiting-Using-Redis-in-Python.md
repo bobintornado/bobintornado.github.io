@@ -59,3 +59,5 @@ Now in order to use it, just put the actual business logic inside something like
 
 PS: Thanks to my colleagues at Nugit who keep pointing out my mistakes and make this work in the end.
 
+Further Reading: [An alternative approach to rate limiting](https://blog.figma.com/an-alternative-approach-to-rate-limiting-f8a06cf7c94c)
+
