@@ -55,7 +55,7 @@ This will work for concurrent works because:
 2. It uses `pipeline` to wrap the INCR and EXPIRE operations in one transaction, thus atomically setting up the key. So in case of errors, there won't be any key lingering around forever.
 3. It gets the key by time in the very beginning, and put it into the `key` variable, thus won't change after.
 
-Now in order to use it, just put the actual business logic inside something like a while loop, and keep trying it with sleep interval between each `lock` call, such as by doing `time.sleep(random.random() + 0.5)`. Or by telling requester to back off and try again later.
+Now in order to use it, just put the actual business logic inside something like a while loop, and keep trying it with sleep interval between each `lock` call until the method returns `True`, such as by doing `time.sleep(random.random() + 0.5)`. Or by telling requester to back off and try again later.
 
 PS: Thanks to my colleagues at Nugit who keep pointing out my mistakes and make this work in the end.
 
