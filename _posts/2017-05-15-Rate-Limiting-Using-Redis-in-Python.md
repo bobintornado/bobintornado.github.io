@@ -12,7 +12,7 @@ One basic pattern for implementing rate limiter is using a counter, and it's exp
 
 However, the sample code is implemented in Lua, and I need to use it in Python. And I need to drop it into around one hundred concurrent workers, so based on the sample code, I came up with the following implementation:
 
-``` python
+{% highlight python %}
 import time
 import redis
 
@@ -45,7 +45,7 @@ class RateLimiter():
     def get_key(self):
         timestamp = int(time.time())
         return "rate:{0}:{1}:{2}".format(self.namespace, self.uid, timestamp)
-```
+{% endhighlight %}
 
 This implementation use pattern `rate:namespace:uid:time_in_second` for the key to differ rate limit counters from each other; use a `lock` method to secure a slot for executing the request, and expire the key in one second.
 
