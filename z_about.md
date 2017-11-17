@@ -5,13 +5,11 @@ permalink: /about/
 displayTitle: About 
 ---
 
-Software engineer, mainly web and iOS.
+Software engineer, mainly working on internet related stuff.
 
-Spend most of time googling at [Nugit](https://nugit.co/).
+Spend most of time tinkering at [Zalora](https://www.zalora.sg/about/).
 
-Passionate about git.
-
-Obsessed with all kinds of `why` questions.
+Obsessed with all kinds of `why` questions and particularly meaning of life.
 
 Some stuff I made
 
@@ -20,7 +18,7 @@ Some stuff I made
 3. [Codility practise](https://github.com/bobintornado/Codility)
 4. [get-github-users-by-location](https://github.com/bobintornado/get-github-users-by-location)
 
-Open soure projects I contribute to
+Some Open soure projects I contribute to
 
 1. [twitter-ruby-ads-sdk](https://github.com/twitterdev/twitter-ruby-ads-sdk)
 2. [google-api-ruby-client](https://github.com/google/google-api-ruby-client)
