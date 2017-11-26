@@ -52,7 +52,7 @@ There is a catch here is that under version `v0.30.2`, if you have an empty fold
 
 The catch is useful when adding static pages. Eg, when adding `About`, `FAQ`, or `Privacy` pages.
 
-To add such a page, first create a folder with the desired name, for example, `about`, then creating an empty `_index.md` file under the folder. Then just dump whatever static HTML into the `list.html` template. 
+To add such a page, first create a folder with the desired name, for example, `about`, then creating an empty `_index.md` file under the folder. After that just dump whatever static HTML into the `list.html` template. 
 
 In the `about` case, dump the content to `layout/about/list.html`.
 
