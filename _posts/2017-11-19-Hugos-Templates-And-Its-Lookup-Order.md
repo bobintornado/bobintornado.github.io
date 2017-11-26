@@ -50,7 +50,7 @@ For example, in the example site I built, there is a `UI` section in the nav bar
 
 There is a catch here is that under version `v0.30.2`, if you have an empty folder, the `list` template will not be rendered automatically. You must put a `_index.md` file under the folder, even the content of file `_index.md` could be empty.
 
-The catch is useful when adding for static pages. Eg, when adding `About`, `FAQ`, or `Privacy`.
+The catch is useful when adding static pages. Eg, when adding `About`, `FAQ`, or `Privacy`.
 
 To add such a page, first create a folder with the desired name, for example, `about`, then creating an empty `_index.md` file under the folder. Then just dump whatever static HTML into the `list.html` template. 
 
