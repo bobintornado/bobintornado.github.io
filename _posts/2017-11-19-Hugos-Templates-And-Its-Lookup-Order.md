@@ -8,7 +8,7 @@ categories: Development
 
 So recently I built a simple [portfolio website](https://toniachen.com/) with [Hugo](http://gohugo.io/). ([Hugo content repo](https://github.com/bobintornado/toniachen-hugo).) 
 
-It was a pretty fun experience and I found Hugo is indeed blazing fast. And Most importantly, I think it has some sensible defaults out of the box, even though it's not documented very well.
+It was a pretty fun experience and I found Hugo is indeed blazing fast. On top of that, I think it has some sensible defaults out of the box, even though it's not documented very well.
 
 While I am learning Hugo I found the templating part a bit hard to figure out, so I decided to write a summary of it.
 
@@ -16,19 +16,33 @@ First, template lookup is just simple cascading, babe. Meaning for every single 
 
 Second, the master template (the bread) should be put at `layout/_default/baseof.html` with `main` block to park the beef later. (It's just normal Golang `HTML/template` stuff)
 
-```
+{% highlight go %}
+
+{% raw %}
+
 {{ block "main" . }} {{ end }}
-```
+
+{% endraw %}
+
+{% endhighlight %}
 
 In all other templates, you could use this master template by using 
 
-```
+
+{% highlight go %}
+
+{% raw %}
+
 {{ define "main" }}
 
 your beef
 
 {{ end }}
-```
+
+{% endraw %}
+
+{% endhighlight %}
+
 
 Third, there are two major templates, namely `list` and `single`. `list` is like the index page, and maps to path `/`; `single` is the like the detail page, and maps to `/:some-content-based-URL`.
 
