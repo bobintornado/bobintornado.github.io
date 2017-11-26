@@ -48,7 +48,7 @@ Third, there are two major templates, namely `list` and `single`. `list` is like
 
 For example, in the example site I built, there is a `UI` section in the nav bar, which maps to `/uis/` path. Under Hugo's default configurations, the folder named `uis` under `content` folder will be used. And upon visiting `/uis/` path, Hugo will look up the template in the order talked about in this [documentation page](https://gohugo.io/templates/section-templates/#section-template-lookup-order). 
 
-There is a catch here is that under version `v0.30.2`, if you have an empty folder, the `list` template will not be rendered automatically. You must put a `_index.md` file under the folder, even the content is of the `_index.md` could be empty.
+There is a catch here is that under version `v0.30.2`, if you have an empty folder, the `list` template will not be rendered automatically. You must put a `_index.md` file under the folder, even the content of file `_index.md` could be empty.
 
 The catch is useful when adding for static pages. Eg, when adding `About`, `FAQ`, or `Privacy`.
 
