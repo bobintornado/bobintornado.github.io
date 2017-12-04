@@ -7,8 +7,6 @@ displayTitle: About
 
 Software engineer, mainly working on internet related stuff.
 
-Spend most of the time tinkering at [Zalora](https://www.zalora.sg/about/).
-
 Obsessed with all kinds of `why` questions and particularly meaning of life.
 
 Some stuff I made
