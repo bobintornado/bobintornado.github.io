@@ -66,3 +66,6 @@ Enjoy.
   * [ng-book](https://www.ng-book.com/)
   * [Egghead.io](https://egghead.io/technologies/angularjs)
   * [Guru99 Tutorial](http://www.guru99.com/angularjs-tutorial.html)
+* Other Guides
+  * [Computer Science Education Resource Guide](http://www.smartscholar.com/computer-science-guide/)
+  * [Teach Yourself Computer Science](https://teachyourselfcs.com/)
