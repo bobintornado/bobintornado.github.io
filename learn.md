@@ -22,6 +22,8 @@ Enjoy.
   * [How to get rich in tech, guaranteed.](http://startupljackson.com/post/135800367395/how-to-get-rich-in-tech-guaranteed)
 * System Design
   * [Designing Data-Intensive Applications: The Big Ideas Behind Reliable, Scalable, and Maintainable Systems](https://dataintensive.net/)
+* Distributed System
+  * [Distributed Systems](https://www.amazon.com/gp/product/1543057381/ref=oh_aui_search_detailpage?ie=UTF8&psc=1)
 * General
   * [SafariBookOnline](https://www.safaribooksonline.com)
   * [Egghead.io](https://egghead.io/)
