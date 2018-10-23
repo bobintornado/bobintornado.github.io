@@ -63,7 +63,7 @@ Since I'm lazy, so I decide to put 2.2.0 as global, so I create the `~/.rbenv/ve
 And now I could finally install Jekyll on my Yosemite with
 
 ~~~
-$ gem install Jekyll
+$ gem install jekyll
 ~~~
 
 I Skip the part about pre-realse and also "Optional Extras” since I don't really need them for now. 
