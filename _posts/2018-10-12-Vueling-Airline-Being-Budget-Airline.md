@@ -44,7 +44,7 @@ As I bought a travel insurance policy from Singapore, I was trying to claim it f
 
 However, the insurance policy requires me to get written proof containing details of my baggage delay (including the duration) from the Public Transport provider. 
 
-That sounds a like fine print to me and should be simple for the airline to provide. But it turns out to be to extremely difficult for Vueling Airline to give me such a written proof, as they cut corners, and didn't track when exactly the bag is delivered, where a simple delivery receipt could solve the issue.
+That sounds like a fine print to me and should be simple for the airline to provide. But it turns out to be to extremely difficult for Vueling Airline to give me such a written proof, as they cut corners, and didn't track when exactly the bag is delivered, where a simple delivery receipt could solve the issue.
 
 So they just ignore my email chasing for the written proof. 
 
