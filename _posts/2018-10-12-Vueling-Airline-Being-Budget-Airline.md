@@ -22,7 +22,7 @@ Besides, the airline offers expenses claiming to acquire basic items that I was 
 
 So with mixed feelings, I waited. And it was until Sep 11 3 PM that I finally get it back from a *random* delivery guy who handed the suitcase to me without any receipt. 
 
-Next, it comes to the claiming part. After a couple of emails and a week later I received an email asking me to fill my bank account information into an online form to transfer about €100 to me. 
+Next, it comes to the claiming part. After a couple of emails and a week later I received an email asking me to fill my bank account information into an online form for transferring about €100 to me. 
 
 And, here is where the cut gets deeper. 
 
