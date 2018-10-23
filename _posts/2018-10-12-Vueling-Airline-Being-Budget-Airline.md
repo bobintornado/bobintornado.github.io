@@ -56,6 +56,6 @@ So I guess this is just Vueling Airline being a budget airline.
 
 And as a traveller not based in Spain, I would try avoiding Vueling airline as much as possible just in case something similar will happen again. 
 
-As a conclusion, I hope you find my experience helpful in helping you decide the airline to take.
+As a conclusion, I hope you find my experience helpful when deciding which airline to take.
 
 Safe travel and godspeed.
