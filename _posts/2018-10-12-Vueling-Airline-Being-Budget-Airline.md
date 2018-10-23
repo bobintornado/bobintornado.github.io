@@ -44,14 +44,18 @@ As I bought a travel insurance policy from Singapore, I was trying to claim it f
 
 However, the insurance policy requires me to get written proof containing details of my baggage delay (including the duration) from the Public Transport provider. 
 
-That sounds like a fine print to me and should be simple for the airline to provide. But it turns out to be to extremely difficult for Vueling Airline to give me such a written proof, as they cut corners, and didn't track when exactly the bag is delivered, where a simple delivery receipt could solve the issue.
+That sounds like a fine print to me and should be simple for an airline to provide. But it turns out to be to extremely difficult for Vueling Airline to give me such a written proof, as they cut corners, and didn't track when exactly the bag is delivered, where a simple delivery receipt could solve the issue.
 
-So they just ignore my email chasing for the written proof. 
+As a result, the airline ignores all my emails chasing for the written proof. 
 
-And based on the insurance policy, I think I probably will lose about US$ 500 for the claim. 
+And based on the insurance policy, I think I probably will lose about US$500 for the claim. 
 
 Besides all these issues, I couldn't even make a free phone call to them to consult about it, as they don't provide a free international support hotline. 
 
 So I guess this is just Vueling Airline being a budget airline.
 
 And as a traveller not based in Spain, I would try avoiding Vueling airline as much as possible just in case something similar will happen again. 
+
+As a conclusion, I hope you find my experience helpful in helping you decide the airline to take.
+
+Safe travel and godspeed.
