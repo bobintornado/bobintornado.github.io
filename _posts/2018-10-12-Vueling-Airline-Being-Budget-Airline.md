@@ -26,7 +26,7 @@ Next, it comes to the claiming part. After a couple of emails and a week later I
 
 And, here is where the cut gets deeper. 
 
-I lived in Singapore, so I tried filling the form with my SGD based account, but it just doesn't work at all. I promised you that I tried filling up the online form more than 50 times but it just doesn't work for me, and it keeps prompting me the error message  `fail in saving the data`. 
+I live in Singapore, so I try filling up the form with my SGD based account, but it just doesn't work at all. I promised you that I tried filling up the online form more than 50 times but it just doesn't work for me, and it keeps prompting me the error message  `fail in saving the data`. 
 
 I tried emailed the airline three times.
 
