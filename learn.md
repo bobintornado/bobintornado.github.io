@@ -5,11 +5,9 @@ permalink: /learn/
 displayTitle: Learning Resources Recommendation
 ---
 
-Quite some folks had asked me for programming related learning materials recommendations, so I think I may as well just recommend for all and for once. 
+Quite some folks had asked me for programming related learning materials recommendations, so I think I may as well recommend for all and for once.
 
 I will keep updating this list from time to time as I learn more and more.
-
-And for every single recommendation appeared in the list, I either PERSONALY USED OR USING them, or created it myself. :) 
 
 Enjoy.
 
@@ -73,3 +71,4 @@ Enjoy.
 * Other Guides
   * [Computer Science Education Resource Guide](http://www.smartscholar.com/computer-science-guide/)
   * [Teach Yourself Computer Science](https://teachyourselfcs.com/)
+  * [Learning Programming And Game Design](https://taxandbusinessonline.villanova.edu/master-of-science-in-analytics/learning-programming-and-game-design)

@@ -5,9 +5,7 @@ permalink: /about/
 displayTitle: About 
 ---
 
-Software engineer, mainly working on internet related stuff.
-
-Currently looking for a new opportunity with `H1B` sponsorship.
+Software engineer with a focus on the geospatial fields, such as routing, ETA and map-matching.
 
 Obsessed with all kinds of `why` questions and particularly the meaning of life.
 
