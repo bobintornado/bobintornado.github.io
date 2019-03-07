@@ -23,23 +23,21 @@ class RateLimiter():
         self.limit = limit
         self.redis_conn = redis.StrictRedis(host='localhost', port=6379, db=0)
 
-    def lock(self):
+    def lock(self, namespace, uid, limit):
         # rate limiter never needs to unlock itself after locking
         # due to usage count shouldn't decrease (keep history)
         try:
-            key = self.get_key()
+            key = self.get_key(namespace, uid)
             pipe = self.redis_conn.pipeline()
-            count = self.redis_conn.incr(key)
-            self.redis_conn.expire(key, 1)
-            pipe.execute()
-
-            if count <= self.limit:
-                return True
-            else:
+            pipe.incr(key)
+            pipe.expire(key, 1)
+            result = pipe.execute()
+            if result[0] <= limit:
                 return False
-        except redis.RedisError:
-            # handle error, for example inform a human
-            print 'Redis error!'
+            else:
+                return True
+        except redis.RedisError as e:
+            print "Redis Error!" 
             raise
 
     def get_key(self):
@@ -61,3 +59,4 @@ PS: Thanks to my colleagues at Nugit who keep pointing out my mistakes and make 
 
 Further Reading: [An alternative approach to rate limiting](https://blog.figma.com/an-alternative-approach-to-rate-limiting-f8a06cf7c94c)
 
+PPS: Thanks David Mnatsakanyan for pointing out the usage of pipeline.
