@@ -7,7 +7,9 @@ displayTitle: About
 
 Software engineer with a focus on the geospatial fields, such as routing, ETA and map-matching.
 
-Obsessed with all kinds of `why` questions and particularly the meaning of life.
+Obsessed with all kinds of `why` questions.
+
+Interested in moving to Bay Area on `H1B1`.
 
 Some stuff I made
 
