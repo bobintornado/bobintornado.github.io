@@ -5,7 +5,7 @@ permalink: /about/
 displayTitle: About 
 ---
 
-Software engineer with a focus on the geospatial fields, such as routing, ETA and map-matching.
+Software engineer on the internet.
 
 Obsessed with all kinds of `why` questions.
 

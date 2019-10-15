@@ -50,6 +50,8 @@ Enjoy.
   * [Official Guide](http://sass-lang.com/guide)
 * Clojure
   * [Clojure for the Brave and True](http://www.braveclojure.com/)
+  * [Clojure official website guides](https://clojure.org/guides/learn/syntax)
+  * [Clojure Koans](https://github.com/functional-koans/clojure-koans)
 * Haskell
   * [Learn You a Haskell for Great Good!](http://learnyouahaskell.com/)
 * Concurrency
@@ -72,3 +74,4 @@ Enjoy.
   * [Computer Science Education Resource Guide](http://www.smartscholar.com/computer-science-guide/)
   * [Teach Yourself Computer Science](https://teachyourselfcs.com/)
   * [Learning Programming And Game Design](https://taxandbusinessonline.villanova.edu/master-of-science-in-analytics/learning-programming-and-game-design)
+  * [55 Ways to Save Money on Internet Safety: The DEFINITIVE Guide](https://cooltechzone.com/save-on-internet-safety)
