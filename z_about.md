@@ -9,8 +9,6 @@ Software engineer on the internet.
 
 Obsessed with all kinds of `why` questions.
 
-Interested in moving to Bay Area on `H1B1`.
-
 Some stuff I made
 
 1. [boltdb-boilerplate](https://github.com/bobintornado/boltdb-boilerplate)
