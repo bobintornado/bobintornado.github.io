@@ -26,9 +26,10 @@ Enjoy.
   * [Egghead.io](https://egghead.io/)
   * [SafariBookOnline](https://www.safaribooksonline.com)
   * [Treehouse](https://teamtreehouse.com/)
-* Git 
+* Git and Usage Guide
   * [Getting Git Right](https://www.atlassian.com/git/)
   * [Git from the inside out](https://maryrosecook.com/blog/post/git-from-the-inside-out)
+  * [6 Best Practices to Manage Pull Request Creation and Feedback](https://doordash.engineering/2022/08/23/6-best-practices-to-manage-pull-request-creation-and-feedback/)
 * JavaScript
   * [Eloquent JavaScript](http://eloquentjavascript.net/) 
   * [My Own Lecture On JavaScript](https://www.youtube.com/watch?v=xoB_ax1QYoE&list=PLnbVZVPYdHvGYIVvAP2PSwbdrHP8abyqJ)
@@ -58,9 +59,9 @@ Enjoy.
   * [Seven Concurrency Models in Seven Weeks](http://www.amazon.com/Seven-Concurrency-Models-Weeks-Programmers/dp/1937785653)
 * Database 
   * [How Linux Works](http://www.amazon.com/How-Linux-Works-Superuser-Should/dp/1593275676/ref=dp_ob_title_bk&tag=mpptbm8aqyadc9e-20&tag=mpptbm8aqyadc9e-20)
+* Linux 
   * [Linux Kernel Development](https://www.amazon.com/Linux-Kernel-Development-Robert-Love/dp/0672329468)
   * [Seven Databases in Seven Weeks](http://www.amazon.com/Seven-Databases-Weeks-Modern-Movement/dp/1934356921)
-* Linux 
 * iOS
   * [Programming iOS 9: Dive Deep into Views, View Controllers, and Frameworks](http://shop.oreilly.com/product/0636920044352.do)
 * C 
