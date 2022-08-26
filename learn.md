@@ -18,14 +18,16 @@ Enjoy.
   * [Soft Skills: The Software Developer's Life Manual](https://www.amazon.com/Soft-Skills-software-developers-manual/dp/1617292397)
   * [What do software developers of age 30 and over know now that wish they had known in their 20s?](https://www.quora.com/What-do-software-developers-of-age-30-and-over-know-now-that-wish-they-had-known-in-their-20s)
   * [What I Wish I Knew When I Started My Career as a Software Developer](https://www.amazon.com/Soft-Skills-software-developers-manual/dp/1617292397)
-* System Design
-  * [Designing Data-Intensive Applications: The Big Ideas Behind Reliable, Scalable, and Maintainable Systems](https://dataintensive.net/)
-* Distributed System
-  * [Distributed Systems](https://www.amazon.com/gp/product/1543057381/ref=oh_aui_search_detailpage?ie=UTF8&psc=1)
 * General
   * [Egghead.io](https://egghead.io/)
   * [SafariBookOnline](https://www.safaribooksonline.com)
   * [Treehouse](https://teamtreehouse.com/)
+* System Design
+  * [Designing Data-Intensive Applications: The Big Ideas Behind Reliable, Scalable, and Maintainable Systems](https://dataintensive.net/)
+* Distributed System
+  * [Distributed Systems](https://www.amazon.com/gp/product/1543057381/ref=oh_aui_search_detailpage?ie=UTF8&psc=1)
+* Docker & Ecosystem
+  * [The container orchestrator landscape](https://lwn.net/SubscriberLink/905164/e1f4d4c1ce35f8b9/)
 * Git and Usage Guide
   * [Getting Git Right](https://www.atlassian.com/git/)
   * [Git from the inside out](https://maryrosecook.com/blog/post/git-from-the-inside-out)
