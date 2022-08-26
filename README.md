@@ -1,3 +1,3 @@
 # Bob's Blog
 
-All kinds of stuff 
+All kinds of stuff
