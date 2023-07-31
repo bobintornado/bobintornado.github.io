@@ -71,7 +71,6 @@ Enjoy.
   * [The C Programming Language](http://www.amazon.com/gp/product/0131103628?psc=1&redirect=true&ref_=oh_aui_detailpage_o03_s00&tag=mpptbm8aqyadc9e-20)
 * AngularJS
   * [Egghead.io](https://egghead.io/technologies/angularjs)
-  * [Guru99 Tutorial](http://www.guru99.com/angularjs-tutorial.html)
   * [ng-book](https://www.ng-book.com/)
 * HTML
   * [HTML Tutorials & Training Resources](https://www.certstaff.com/blog/?page_id=179)
